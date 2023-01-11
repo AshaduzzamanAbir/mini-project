@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #edf1ed;
+  font-family: sans-serif;
+}
+.container {
+  position: relative;
+  background:linear-gradient(to bottom, rgba(0,0,0,0.5),#fff);
+  padding: 1.3rem;
+  box-shadow: 15px 15px 20px rgba(0,0,0,0.2), -15px -15px 20px #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+}
+.range {
+  width: 450px;
+  height: 15px;
+  appearance: none;
+  border-radius: 15px;
+  background: #edf1ed;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px #eee;
+  outline: none;
+  inset: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.range::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: rgb(248, 248, 248);
+  border-radius: 50%;
+  border: 2px solid red;
+  box-shadow: -409px 0 0 400px Red;
+  cursor: pointer;
+
+}
+#rangeValue {
+  position: relative;
+  width: 60px;
+  text-align: center;
+  background: red;
+  border-radius: 15px;
+  margin-left: 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  box-shadow: 5px 5px 10px rgba(0,0,0,.2), -5px -5px 10px #fff;
+  inset: 5px 5px 10px rgba(0,0,0,.2), inset -5px -5px 5px #fff;
+}
