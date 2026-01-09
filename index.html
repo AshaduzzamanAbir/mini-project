@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Editor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Image Editor</h1>
+    <div class="actions">
+      <input type="file" id="upload" accept="image/*" hidden />
+      <button id="uploadBtn">Upload</button>
+      <button id="downloadBtn">Download</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </header>
+
+  <main class="editor">
+    <!-- Tools -->
+    <aside class="tools">
+      <button data-tool="crop">Crop</button>
+      <button data-tool="rotate">Rotate</button>
+      
+        <div class="placeholder-area placeholder" id="placeholder">
+          <input class="input" type="file" id="imageUpload" accept="image/*"  />
+          <i class="ri-image-ai-line icon"></i>
+          <p class="placeholder">Upload image</p>
+      </div>
+    </aside>
+
+    <!-- Canvas -->
+    <section class="canvas-area">
+
+      <canvas id="canvas"></canvas>
+      <div class="placeholder-center placeholder" id="placeholder">
+        <input class="input" type="file" id="imageUpload" accept="image/*"  />
+        <i class="ri-image-ai-line icon"></i>
+        <p class="placeholder">Upload an image for get started</p>
+      </div>
+    </section>
+
+    <!-- Controls -->
+    <aside class="controls">
+      <h3>Adjustments</h3>
+
+      <div class="filters" id="filters" >
+        
+        
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
